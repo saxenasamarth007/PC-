@@ -7,3 +7,6 @@ def home_page():
 @app.route('/<string:html_page>')
 def other_pages(html_page):
     return render_template(html_page)
+
+if __name__ == '__main__':
+    app.run(debug=true)
